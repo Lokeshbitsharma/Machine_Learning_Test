@@ -1,0 +1,56 @@
+get_metadata_path = @params/get_metadata_path
+
+get_mlflow_uri_path = @params/get_mlflow_uri_path
+
+get_n_samples_k = @params/get_n_samples_k
+get_n_test = @params/get_n_test
+get_epochs = @params/epochs
+get_alpha = @params/get_alpha
+get_beta = @params/get_beta
+
+get_input_shape = @params/get_input_shape
+get_neurons_l1_range = @params/get_neurons_l1_range
+get_neurons_l2_range = @params/get_neurons_l2_range
+get_neurons_out = @params/get_neurons_out
+get_activation_l1 = @params/get_activation_l1
+get_activation_l2 = @params/get_activation_l2
+
+get_input_label = @params/get_input_label
+get_output_label = @params/get_output_label
+get_time_index_label = @params/get_time_index_label
+
+get_input_width = @params/get_input_width
+get_output_width = @params/get_output_width
+get_shift = @params/get_shift
+get_shuffle = @params/get_shuffle  
+
+get_metadata_path.metadata_path = r'D:/MachineLearning/GitHub/Machine_Learning_Test/MetaLearning/meta_data'
+get_mlflow_uri_path.uri_path = 'logs/mlflow/mlruns'
+
+get_n_samples_k.n_samples_k = 10
+get_n_test.n_test = 5
+get_epochs.epochs = 100
+get_alpha.aplha = [0.001,0.05,0.01]
+get_beta.beta = [0.0001,0.0005,0.001]
+
+get_input_shape.shape = (1,1)
+
+get_neurons_l1_range.low = 30
+get_neurons_l1_range.high = 50
+get_neurons_l1_range.steps = 4
+
+
+get_neurons_l1_range.low = 30
+get_neurons_l1_range.high = 50
+get_neurons_l1_range.steps = 4
+
+get_neurons_out.neurons_out = [1]
+get_activation_l1.activation_l1 = ['relu']
+get_activation_l2.activation_l2 = ['relu']
+
+get_input_label.input_label = ['X']
+get_output_label.output_label = ['y']
+get_time_index_label.index_label = None
+
+
+

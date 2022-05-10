@@ -1,0 +1,65 @@
+get_metadata_path = @params/get_metadata_path
+
+get_mlflow_uri_path = @params/get_mlflow_uri_path
+
+get_n_samples_k = @params/get_n_samples_k
+get_n_test = @params/get_n_test
+get_epochs = @params/epochs
+get_alpha = @params/get_alpha
+get_beta = @params/get_beta
+
+get_input_shape = @params/get_input_shape
+get_neurons_l1_range = @params/get_neurons_l1_range
+get_neurons_l2_range = @params/get_neurons_l2_range
+get_neurons_out = @params/get_neurons_out
+get_activation_l1 = @params/get_activation_l1
+get_activation_l2 = @params/get_activation_l2
+
+get_input_label = @params/get_input_label
+get_output_label = @params/get_output_label
+get_time_index_label = @params/get_time_index_label
+
+get_input_width = @params/get_input_width
+get_output_width = @params/get_output_width
+get_shift = @params/get_shift
+get_shuffle = @params/get_shuffle  
+
+get_scaler_feature_dict = @params/get_scaler_feature_dict
+get_scaler_storage_path = @params/get_scaler_storage_path
+
+get_metadata_path.metadata_path = 'metadata_timeseries'
+get_mlflow_uri_path.uri_path = '../logs/mlflow/mlruns'
+
+get_n_samples_k.n_samples_k = 20
+get_n_test.n_test = 10
+get_epochs.epochs = 1000
+get_alpha.aplha = [0.001,0.05,0.01]
+get_beta.beta = [0.01,0.001,0.0005]
+
+get_input_shape.shape = (1,1)
+
+get_neurons_l1_range.low = 60
+get_neurons_l1_range.high = 100
+get_neurons_l1_range.steps = 5
+
+
+get_neurons_l1_range.low = 60
+get_neurons_l1_range.high = 100
+get_neurons_l1_range.steps = 5
+
+get_neurons_out.neurons_out = [1]
+get_activation_l1.activation_l1 = ['relu', 'tanh']
+get_activation_l2.activation_l2 = ['relu', 'tanh']
+
+get_input_label.input_label = ['X1','X2','X3']
+get_output_label.output_label = ['X1']
+get_time_index_label.index_label = 'Month'
+
+get_input_width.input_width = [6]
+get_output_width.output_width = [3]
+get_shift.shift = [3,4,5,6]
+get_shuffle.shuffle = [True]
+
+get_scaler_feature_dict.scaler_list = ['standard_scaler','standard_scaler']
+get_scaler_feature_dict.feature_list = [['X1'],['X2'],['X3']]
+get_scaler_storage_path.scaler_storage_path = 'saved_models'
